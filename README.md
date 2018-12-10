@@ -1,7 +1,21 @@
 # React Native Expo Redux Boiler Plate
-Boiler Plate for Expo React Native Projects with Redux 
+Boiler Plate for Expo React Native Projects with Redux
 
-MIT License
+### Getting Started
+
+There are two methods for getting started with this repo.
+
+#### Familiar with Git?
+Checkout this repo, install dependencies, then start the gulp process with the following:
+
+```
+> git clone https://github.com/themakerman/ReactNativeExpoReduxBoilerPlate.git
+> cd ReactNativeExpoReduxBoilerPlate
+> npm install
+> npm start
+```
+
+#### MIT License
 
 Copyright (c) 2018 Gaurav Harchwani
 
