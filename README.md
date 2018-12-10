@@ -1,4 +1,4 @@
-# ReactNativeExpoReduxBoilerPlate
+# React Native Expo Redux Boiler Plate
 Boiler Plate for Expo React Native Projects with Redux 
 
 MIT License
