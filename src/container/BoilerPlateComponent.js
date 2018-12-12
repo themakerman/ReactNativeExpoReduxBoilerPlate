@@ -2,7 +2,8 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet
+  StyleSheet,
+  TouchableOpacity
  } from 'react-native';
 import { connect } from 'react-redux';
 import { testActionAsync, testAction } from '../../src/actions/';
@@ -11,17 +12,17 @@ import _ from 'lodash';
 class BoilerPlateComponent extends React.Component {
 
   render() {
-    console.log(this.props);
     return (
       <View style={styles.container}>
         <Text>Boiler Plate Component</Text>
+        <TouchableOpacity style={{ width: 100, height: 20, backgroundColor: 'red' }} onPress={() => this.props.testAction('woaa')}>
+          <Text>Button</Text>
+        </TouchableOpacity>
       </View>
     );
   }
 
-  componentDidMount() {
-    this.props.testAction('walao');
-  }
+
 }
 
 const styles = StyleSheet.create({

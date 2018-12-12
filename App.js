@@ -5,6 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import reducers from './src/reducers';
 import BoilerPlateComponent from './src/container/BoilerPlateComponent';
+import store from './src/store';
 
 export default class App extends React.Component {
 
@@ -14,7 +15,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
     return (
       <Provider store={store}>
         <View style={styles.container}>
